@@ -1,26 +1,14 @@
-import { StyleSheet } from "react-native";
-import { Text, View } from "@/src/components/Themed";
+import { FlatList } from "react-native";
 import PostListItem from "@/src/components/PostListItem";
 import posts from "../../assets/data/posts.json";
 
-const firstPost = posts[0];
-
-export default function TabOneScreen() {
+export default function HomeFeedScreen() {
   return (
-    <View style={styles.container}>
-      <PostListItem post={firstPost} />
-    </View>
+    <FlatList
+      data={posts}
+      renderItem={({ item }) => <PostListItem post={item} />}
+      showsVerticalScrollIndicator={false} // hiding right side scroll bar for infinite scrolling
+      contentContainerStyle={{ gap: 10 }} // this is a new property to add gaps in between rendered items
+    />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-});
