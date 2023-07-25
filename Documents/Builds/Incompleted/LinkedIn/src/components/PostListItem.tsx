@@ -1,6 +1,14 @@
-import { Text, View, StyleSheet, Image, SafeAreaView } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  SafeAreaView,
+  Pressable,
+} from "react-native";
 import { Post } from "../types";
 import { FontAwesome } from "@expo/vector-icons";
+import { Link } from "expo-router";
 
 type PostListItemProps = {
   post: Post;
@@ -24,8 +32,9 @@ function FooterButtons({ text, icon }: FooterButtonProp) {
 
 function PostListItem({ post }: PostListItemProps) {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    // This Link component renders a component that can navigate to a screen on press
+    <Link href={`/posts/${post.id}`} style={styles.container}>
+      <View>
         {/* Header */}
         <View style={styles.header}>
           <Image source={{ uri: post.author.image }} style={styles.userImage} />
@@ -49,13 +58,16 @@ function PostListItem({ post }: PostListItemProps) {
           <FooterButtons text={"Share"} icon="share" />
         </View>
       </View>
-    </SafeAreaView>
+    </Link>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
+    width: "100%",
+    maxWidth: 400,
+    alignSelf: "center",
   },
   //   Header section
   header: {
