@@ -4,6 +4,7 @@ import Images from "./components/Images";
 import SearchField from "./components/SearchField";
 import useAxios from "./hooks/useAxios";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 // Creating the createContext hook to pass values between components for usability
 export const ImageContext = createContext();
@@ -32,6 +33,7 @@ function App() {
         <Header />
         <SearchField />
         <Images />
+        <Footer />
       </ImageContext.Provider>
     </div>
   );
