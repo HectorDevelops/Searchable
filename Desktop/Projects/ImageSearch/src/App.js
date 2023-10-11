@@ -5,6 +5,7 @@ import SearchField from "./components/SearchField";
 import useAxios from "./hooks/useAxios";
 import { useState } from "react";
 import Footer from "./components/Footer";
+import DarkModeSwitch from "./components/DarkModeSwitch";
 
 // Creating the createContext hook to pass values between components for usability
 export const ImageContext = createContext();
@@ -28,11 +29,12 @@ function App() {
   };
 
   return (
-    <div className="h-screen bg-gray-300">
+    <div className="h-screen bg-gray-300 dark:bg-zinc-800">
       <ImageContext.Provider value={value}>
         <Header />
         <SearchField />
         <Images />
+        <DarkModeSwitch />
         <Footer />
       </ImageContext.Provider>
     </div>
