@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Switch from "react-switch";
 
+// Creating the DarkModeSwtich component to change site's theme for accessibility inclusiness
 const DarkModeSwitch = () => {
+  // Creating this hook to toggle between true or false in the dark mode button
   const [toggle, setToggle] = useState(false);
 
+  // Creating this function to set toggle to the current state's opposite
   const handleChange = (val) => {
     setToggle(val);
   };
+  // The useEffect will help change the site's theme based once toggle is updated
   useEffect(() => {
     if (toggle === true) {
       document.documentElement.classList.add("dark");
@@ -14,7 +18,7 @@ const DarkModeSwitch = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [toggle]);
-
+  // This function
   const handleModeSwitch = () => {
     setToggle(toggle === true ? false : true);
   };
