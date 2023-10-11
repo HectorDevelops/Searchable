@@ -31,7 +31,7 @@ const SearchField = () => {
   };
 
   return (
-    <div className=" w-full bg-gray-900 h-6 ">
+    <div className=" w-full bg-gray-900 h-6 dark:bg-neutral-900">
       <div className="w-full max-w-2xl flex mx-auto ">
         <input
           className="bg-gray-50 border borde-gray-300 text-sm w-full indent-2 p-2.5 outline-none focus:border-blue-500 focus:ring rounded-tl rounded-bl "
