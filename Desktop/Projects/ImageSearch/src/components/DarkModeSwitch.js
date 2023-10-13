@@ -18,7 +18,7 @@ const DarkModeSwitch = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [toggle]);
-  // This function
+  // This function 
   const handleModeSwitch = () => {
     setToggle(toggle === true ? false : true);
   };

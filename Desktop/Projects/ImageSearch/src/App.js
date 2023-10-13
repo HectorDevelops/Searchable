@@ -31,6 +31,9 @@ function App() {
   return (
     <div className="h-screen bg-gray-300 dark:bg-zinc-800">
       <ImageContext.Provider value={value}>
+        
+        {/* Create screens folder to store these components under the hood */}
+
         <Header />
         <SearchField />
         <Images />
