@@ -18,13 +18,13 @@ const DarkModeSwitch = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [toggle]);
-  // This function 
+  // This function
   const handleModeSwitch = () => {
     setToggle(toggle === true ? false : true);
   };
 
   return (
-    <div className="flex justify-center -mt-32 mb-10">
+    <div className="flex justify-center pt-5 pb-8">
       <Switch
         checked={toggle}
         onChange={handleChange}
