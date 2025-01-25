@@ -2,7 +2,7 @@
 
 ![SearchableGIF](https://github.com/user-attachments/assets/5f753701-2e50-40d6-ad03-e2d80fdecdfa )
 
-Searchable was created with the purchase to interactr with the Unplash API, enabling users to access a vast library of high quality images from all over the web. With an intuitive user interface, Searchable offers simplicity and accessibility, making sure users can find and explore images effortlessly while enjoying built-in accessbility features like dark mode. 
+Searchable was created with the purpose to interactr with the Unplash API, enabling users to access a vast library of high quality images from all over the web. With an intuitive user interface, Searchable offers simplicity and accessibility, making sure users can find and explore images effortlessly while enjoying built-in accessbility features like dark mode. 
 
 
 # Technologies Used 
