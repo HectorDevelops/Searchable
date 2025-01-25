@@ -1,6 +1,4 @@
-<h1 align='center'>Welcome to Exchange</h1>
-
-<img width="1065" alt="Screenshot 2023-09-17 at 9 21 00 PM" src="https://github.com/HectorDevelops/Exchange/assets/55935722/744cdce3-a0c4-403f-a132-d2f68b018f34">
+<h1 align='center'>Welcome to Searchable</h1>
 
 ![SearchableGIF](https://github.com/user-attachments/assets/5f753701-2e50-40d6-ad03-e2d80fdecdfa )
 
