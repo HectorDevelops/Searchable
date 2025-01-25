@@ -28,10 +28,10 @@ https://github.com/HectorDevelops/Searchable
 * npm install
 
 3. If you encounter any of the following issues:
-   a. "Can't resolve 'react-icons/tb'"
-     1. npm install react-icons
-   b. "Can't resolve axios" 
-     1. npm install axios
+* "Can't resolve 'react-icons/tb'"
+** npm install react-icons
+* "Can't resolve axios" 
+** npm install axios
 
 4. Build and run the application by running:
   a. npm run start
